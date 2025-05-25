@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jianwang 3</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      var currentPage = ".main";
+      var currentCharacter = ".daozong";
+
+      $(".buttons").click(function () {
+        var buttonText = $(this).text();
+        var page = getPageForButtonText(buttonText);
+        $(currentPage).hide();
+        $(page).stop().slideDown(1000);
+        currentPage = page;
+      });
+
+      $(".icon").click(function () {
+        var iconID = $(this).attr("id");
+        var content = getCharacterForIconID(iconID);
+        $(currentCharacter).hide();
+        $(content).stop().fadeIn(1000);
+        currentCharacter = content;
+      });
+
+      function getCharacterForIconID(iconID) {
+        var character = {
+          "daozong" : ".daozong",
+          "chunyang" : ".chunyang",
+          "qixiu" : ".qixiu",
+          "wanhua" : ".wanhua",
+          "tiance" : ".tiance",
+          "shaolin" : ".shaolin",
+          "cangjian" : ".cangjian",
+          "wudu" : ".wudu",
+          "tangmen" : ".tangmen",
+          "mingjiao" : ".mingjiao",
+          "gaibang" : ".gaibang",
+          "cangyun" : ".cangyun",
+          "changge" : ".changge",
+          "badao" : ".badao",
+          "penglai" : ".penglai",
+          "lingxue" : ".lingxue",
+          "yaozong" : ".yaozong",
+          "yantian" : ".yantian"
+        };
+        return character[iconID];
+      }
+
+      function getPageForButtonText(buttonText) {
+        var page = {
+          "Home": ".main",
+          "Game Story": ".story",
+          "Character": ".character",
+          "PVP": ".PVP",
+          "PVE": ".PVE"
+        };
+        return page[buttonText];
+      }
+
+      $(".detail").hide();
+      $(".story").hide();
+      $(".character").hide();
+      $(".PVP").hide();
+      $(".PVE").hide();
+
+      $(".chunyang").hide();
+      $(".qixiu").hide();
+      $(".wanhua").hide();
+      $(".tiance").hide();
+      $(".shaolin").hide();
+      $(".cangjian").hide();
+      $(".wudu").hide();
+      $(".tangmen").hide();
+      $(".mingjiao").hide();
+      $(".gaibang").hide();
+      $(".cangyun").hide();
+      $(".changge").hide();
+      $(".badao").hide();
+      $(".penglai").hide();
+      $(".lingxue").hide();
+      $(".yaozong").hide();
+      $(".yantian").hide();
+
+      $(".horver").hover(
+        function () {
+          $(this).find(".detail").stop().slideDown(300);
+        },
+        function () {
+          $(this).find(".detail").stop().slideUp(300);
+        }
+      );
+
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><button class="buttons">Home</button></li>
+        <li><button class="buttons">Game Story</button></li>
+        <li><button class="buttons">Character</button></li>
+        <li><button class="buttons">PVP</button></li>
+        <li><button class="buttons">PVE</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="main">
+      <section>
+        <h2>Jianwang 3</h2>
+        <p>"Jianwang 3" is a martial arts-themed massively multiplayer online role-playing game developed by Xishanju
+          Studio. It is the sixth work of the Swordsman Love series and the third work of the series after the online
+          gamification. The story background of the game is set in the reign of Emperor Xuanzong of the Tang Dynasty
+          earlier than the background of other works in the series.</p>
+        <p>The version in mainland China adopts the monthly subscription fee system and point card fee system.</p>
+        <p>"Jian Wang 3" presents the world of traditional Chinese martial arts by virtue of terrain and vegetation
+          rendering technology, scene light and shadow special effects, and SpeedTree engine special effects. Elements
+          are
+          integrated into the game, showing players a magnificent and gorgeous Datang world. At the same time, "Jian
+          Wang
+          3" brings players a new gaming experience through the new ACT gameplay created by the physics engine.</p>
+        <p>"Jian Wang 3" sells no fee-based content that destroys the fair environment of the game, that is, the items
+          that need to be charged in the game will not affect the character data.</p>
+        <p>Xishanju released "Jian Wang 3" in early 2008. On August 28, 2009, the public beta of "Jianwang III" was
+          launched. 22 expansions have been released so far.</p>
+      </section>
+      <section class="horver">
+        <img src="./image/dengluqi.png" alt="Lander's page">
+        <p class="detail">Game launcher</p>
+      </section>
+    </section>
+
+    <section class="story">
+      <h2>Game Story</h2>
+      <p>"In the year 745 AD, during the fourth year of the Tianbao era in the Tang Dynasty, a significant event took
+        place in August. Yang Yuhuan was officially bestowed the title of Yang Guifei, marking the beginning of her
+        ten-year period of favor and influence. It was also in this same year that An Lushan received an imperial order
+        to enter the court and meet the Emperor in Chang'an. The prosperity of Chang'an once again ignited his ambitious
+        desires, but the might of the Tang Dynasty's elite forces, known as the Tiancefu, astounded him. He had never
+        imagined that the Tang Dynasty possessed such a formidable military. In order to achieve his goals, An Lushan
+        simultaneously persuaded Yang Guozhong to support the Shenji Army and suppress the Tiancefu, while secretly
+        preparing his own army - the Wolf Teeth Army. At the same time, he realized the need to deal with the
+        influential martial arts factions of the Central Plains, as he had witnessed the power and influence of the
+        Cangjian Mountain Villa's famous swordsmen at a martial arts gathering. To truly seize control of the Central
+        Plains, he knew that he had to eliminate this major threat from the martial arts community. It was at this
+        crucial moment that a mysterious figure entered An Lushan's camp. And thus, the story of Jianwang 3 begins from
+        this year."</p>
+      <section class="horver">
+        <img src="./image/Game.png" alt="In Game page">
+        <p class="detail">In Game</p>
+      </section>
+    </section>
+
+    <section class="character">
+      <h2>Characters</h2>
+      <section class="sidebar">
+        <img class="icon" id="daozong" src="./image/daozongicon.png" alt="daozongicon">
+        <img class="icon" id="yaozong" src="./image/yaozongicon.png" alt="yaozongicon">
+        <img class="icon" id="yantian" src="./image/yantianicon.png" alt="yantianicon">
+        <img class="icon" id="lingxue" src="./image/lingxueicon.png" alt="lingxueicon">
+        <img class="icon" id="penglai" src="./image/penglaiicon.png" alt="penglaiicon">
+        <img class="icon" id="badao" src="./image/badaoicon.png" alt="badaoicon">
+        <img class="icon" id="changge" src="./image/mowenicon.png" alt="mowenicon">
+        <img class="icon" id="cangyun" src="./image/cangyunicon.png" alt="cangyunicon">
+        <img class="icon" id="gaibang" src="./image/gaibangicon.png" alt="gaibangicon">
+        <img class="icon" id="mingjiao" src="./image/mingjiaoicon.png" alt="mingjiaoicon">
+        <img class="icon" id="tangmen" src="./image/tangmenicon.png" alt="tangmenicon">
+        <img class="icon" id="wudu" src="./image/dujingicon.png" alt="dujingicon">
+        <img class="icon" id="cangjian" src="./image/cangjianicon.png" alt="cangjianicon">
+        <img class="icon" id="tiance" src="./image/tianceicon.png" alt="tianceicon">
+        <img class="icon" id="chunyang" src="./image/chunyangicon.png" alt="chunyangicon">
+        <img class="icon" id="shaolin" src="./image/heshangicon.png" alt="heshangicon">
+        <img class="icon" id="qixiu" src="./image/qixiuicon.png" alt="qixiuicon">
+        <img class="icon" id="wanhua" src="./image/huajianicon.png" alt="huajianicon">
+      </section>
+      
+      <article class="chunyang">
+        <h3>ChunYang</h3>
+        <p>In the fourth year of Chang'an (704 A.D.), with the support of the imperial court, Lu Dongbin established
+          Chunyang Temple in Huashan, Xiyue. After Xuanzong ascended the throne, Chunyang achieved greater development.
+          The current head of Chunyang is Li Wangsheng. He and Lu Dongbin's other four disciples, Zhuo Fengming,
+          Shangguan Boyu, Yu Rui, and Qi Jin, are called the "Five Sons of Chunyang".</p>
+        <p>Chunyang Martial Arts integrates the true essence of Taoism, and all methods are natural. Not only can one's
+          own internal force be operated as one wishes, but also a Tai Chi aura can be constructed, which is consistent
+          in offense and defense, and can advance and retreat freely. Let the enemy be strong and the enemy weak, let
+          nature take its course, and respond to all changes with the same.</p>
+        <section class="horver">
+          <img src="./image/chunyang.png" alt="ChunYang">
+          <p class="detail">Chun Yang</p>
+        </section>
+      </article>
+
+      <article class="qixiu">
+        <h3>QiXiu</h3>
+        <p>During the Shenlong period, a strange woman appeared in the martial arts world, known as Aunt Gongsun. She
+          founded Yiying Tower by the Slender West Lake, and carried forward the sword dance art.</p>
+        <p>More than ten years later, the seven orphans they took in were well-known in the Jianghu, so they were named
+          "Qixiu", and Yiying Building was also renamed Qixiufang. For a while, Qixiufang became one of the three most
+          elegant places in the Tang Dynasty, as famous as Wanhua Valley and Changgemen.</p>
+        <p>Qixiu's moves are gorgeous but not cumbersome. Manhua's superb dance poses hide all kinds of mysteries,
+          either weakening the enemy in invisible places, or helping friends in an instant. Dazzling people are hard to
+          guard against. They can often decide the overturning of the battle situation at unexpected times.</p>
+        <section class="horver">
+          <img src="./image/qixiu.png" alt="QiXiu">
+          <p class="detail">Qi Xiu</p>
+        </section>
+      </article>
+
+      <article class="wanhua">
+        <h3>WanHua</h3>
+        <p>In the 23rd year of the Kaiyuan period of the Tang Dynasty, Dongfang Yuxuan, the owner of Wanhua Valley,
+          traveled all over the world, stumbled into Qinling Qingyan in a trance, and sighed that there was such a fairy
+          place in the western mountains, so he recruited wise men to live in seclusion here, and named it "Wanhua
+          Valley".</p>
+        <p>The most subtle point of Wanhua's martial arts is to tap acupuncture points to cut off the pulse, which can
+          control life and death at the front line. By combining superb medical skills with acupressure techniques, you
+          can not only heal your partner's injuries and prolong your life, stabilize the battle situation, but also
+          stand up and use exquisite techniques to control the enemy and control the field.</p>
+        <section class="horver">
+          <img src="./image/wanhua.png" alt="WanHua">
+          <p class="detail">Wan Hua</p>
+        </section>
+      </article>
+
+      <article class="tiance">
+        <h3>TianCe</h3>
+        <p>Tiance Mansion is the army of the Tang Dynasty in charge of Jianghu affairs. There is no real sense of good
+          and evil in their hearts. Only adhere to the belief that the Li and Tang Dynasties are the foundation. In
+          order to maintain the stability of the Tang Dynasty, they are willing to meet gods and kill gods, and Buddhas
+          to kill Buddhas, even if they are in a catastrophe.</p>
+        <p>Tiance martial arts is different from other sects, never emphasizing moves or principles, Tiance martial arts
+          are often directly evolved from martial arts in war, it is extremely practical, and its moves are deadly,
+          without any fancy. Coupled with Tiance Mansion's unique military formation and horse fighting, it can advance
+          and retreat freely, with amazing power and incomparable domineering.</p>
+        <section class="horver">
+          <img src="./image/tiance.png" alt="TianCe">
+          <p class="detail">Tian Ce</p>
+        </section>
+      </article>
+
+      <article class="cangjian">
+        <h3>CangJian</h3>
+        <p>Although it is only the second generation of the Tibetan Sword Villa to be passed down to the current owner,
+          Ye Ying, the name of Tibetan Sword is known to everyone. Since the establishment of the village, Zangjian has
+          acted in a reasonable and orderly manner, and there have been many famous heroes in the village. During the
+          Tianbao period, the Zangjian Ye family, the Tang family in the middle of Shu, the Badao Liu family, and the
+          Changge Yang family were also known as the four great families.</p>
+        <p>Tibetan sword martial arts are well versed in the ultimate meaning of the sword. Tibetan sword disciples are
+          equipped with two light and heavy swords, which can be used as you wish, and you can quickly switch between
+          different sword-handling methods. It is so ingenious and clumsy, and it is as heavy as it is light, making the
+          opponent confused by the profound swordsmanship and unable to deal with it. The sword has a sharp edge but
+          does not show its shape, and the heart is the sword, which is the hidden sword.</p>
+        <section class="horver">
+          <img src="./image/cangjian.png" alt="CangJian">
+          <p class="detail">Cang Jian</p>
+        </section>
+      </article>
+
+      <article class="shaolin">
+        <h3>ShaoLin</h3>
+        <p>Shaolin has an indissoluble bond with the Li dynasty. In the third year of Tang Wude, Huixi, Tanzong and
+          other thirteen monks invaded the fief of Shaolin Temple because they were dissatisfied with Wang Renze, and
+          "led the crowd to reject the false masters". Thirteen monks broke into Zheng Bing's camp at night, captured
+          Wang Renze alive, and dedicated it to Li Shimin, making great contributions to King Qin's unification of the
+          country.</p>
+        <p>Shaolin martial arts emphasizes the use of Zen into martial arts, and the combination of Zen and martial
+          arts. The moves are wide open and wide, stable but not sluggish, every move is full of the meaning of Buddha's
+          light, and the energy can be transported to the whole body in the later stage of practice. Even if you are
+          hit, the opponent will be greatly injured. damage.</p>
+        <section class="horver">
+          <img src="./image/shaolin.png" alt="ShaoLin">
+          <p class="detail">Shao Lin</p>
+        </section>
+      </article>
+
+      <article class="wudu">
+        <h3>WuDu</h3>
+        <p>The Five Poisons Sect (self-proclaimed the Five Sacred Sects internally) is a mysterious organization. Even
+          many of their own congregants don’t know how the Five Sacred Sect was founded. For the Central Plains martial
+          arts, the Five Poisons are always the most mysterious sect. There is no other way but to die, so it has become
+          the sect that martial arts people are least willing to provoke.</p>
+        <p>The Five Poisons Martial Arts combines Miaojiang Gu, Five Poisons and Insect Control. Through the mysterious
+          use of poison and Gu, it is possible to attack the enemy with various strange and highly poisonous poisons, to
+          heal injuries and extend life with Gu, and to control five kinds of poisonous insects: Holy Scorpion, Jade
+          Toad, Spirit Snake, Wind Centipede, Sky Spider, For Miaojiang, the secret technique is not passed on.</p>
+        <section class="horver">
+          <img src="./image/wudu.png" alt="WuDu">
+          <p class="detail">Wu Du</p>
+        </section>
+      </article>
+
+      <article class="tangmen">
+        <h3>TangMen</h3>
+        <p>The Tang Sect, originally a family of assassins, only appeared in Sichuan and Sichuan. The appearance of Tang
+          Jian spread the reputation of Tangmen all over the Central Plains, and became the number one master in the
+          martial arts at that time. Later, the Beggar Gang and the Tang Sect allied to fight the Mingjiao in Fenghua
+          Valley, but they were severely injured, and the vitality of the Tang Sect was seriously injured. The current
+          head of the Tang Sect, Tang Aotian, lost his legs, but his idea of ​​revitalizing the Tang Sect has never
+          stopped .</p>
+        <p>Tangmen martial arts is famous for its hidden weapons and traps. He is good at making use of the deformable
+          thousand receivers and the elusive movement method to quietly arrange various mechanism traps, and cooperate
+          with various long-range poison poisoning concealed weapons, bows and arrows, which are unpredictable and
+          amazingly powerful.</p>
+        <section class="horver">
+          <img src="./image/tangmen.png" alt="TangMen">
+          <p class="detail">Tang Men</p>
+        </section>
+      </article>
+
+      <article class="mingjiao">
+        <h3>MingJiao</h3>
+        <p>Mingjiao was created by Lu Weilou. He manages well and makes Mingjiao continue to grow. However, if it is
+          strong, it will be reversed, and if it is prosperous, it will decline. Tang Xuanzong was furious because he
+          entered the palace to persuade him. He ordered the Mingjiao to be wiped out, which caused Mingjiao to suffer
+          great The blow fell into a trough since then, and Lu Weilou led some congregants to leave the Western Regions.
+        </p>
+        <p>Mingjiao martial art has the power of the sun and the moon, it can often launch a devastating attack from an
+          unexpected place of the enemy, often making the enemy elusive, the attack is in vain, and it is impossible to
+          defend against. A firm belief can enable believers to be protected by Mingzun, and become a magical figure of
+          colored glaze. Even if they are attacked, they can also obtain new vitality from the enemy.</p>
+        <section class="horver">
+          <img src="./image/mingjiao.png" alt="MingJiao">
+          <p class="detail">Ming Jiao</p>
+        </section>
+      </article>
+
+      <article class="gaibang">
+        <h3>GaiBang</h3>
+        <p>The Beggars' Clan was founded by Yin Tianci. The headquarter is located on Junshan Island in Dongting Lake.
+          "Loyalty" is the first rule of the gang. Although it is called the Beggar Clan, the attire does not have to be
+          as tattered as beggars. The members of the Beggar Clan have strange and strange backgrounds and each has its
+          own temperament.</p>
+        <p>The martial arts of the beggar gang is famous all over the world for its "Eighteen Dragon Subduing Palms" and
+          "Dog Beating Stick Technique". The Subduing Dragon Palm was created by Yin Tianci, and was later perfected by
+          the current leader Guo Yan. Once it is used, it flows like clouds and flowing water, forcing the enemy back
+          with continuous attacks. The dog-beating stick method is a very high and profound martial art, and only those
+          with exquisite minds can reach the profound state.</p>
+        <section class="horver">
+          <img src="./image/gaibang.png" alt="GaiBang">
+          <p class="detail">Gai Bang</p>
+        </section>
+      </article>
+
+      <article class="cangyun">
+        <h3>CangYun</h3>
+        <p>In the third year of Wude, the thirteen stick monks of Shaolin Temple rescued Li Shimin when he was in
+          distress, which made him feel the great role of people in the world in the war. He decided to form a special
+          force composed of people in the martial arts and military masters , named Xuanjia Cangyun Army. In the fourth
+          year of Tianbao, Xue Zhi, commander of Cangyun, died in battle, and his deputy commander, Sun Wangqing,
+          succeeded him.</p>
+        <p>Cangyun martial arts was mainly handed down by Master Tanzong, which evolved into "Iron Bone Clothes".
+          "Fenshan Jin" is Li Jing's external kung fu, which was honed by generations of masters with the combination of
+          sword and shield.</p>
+        <section class="horver">
+          <img src="./image/cangyun.png" alt="CangYun">
+          <p class="detail">Cang Yun</p>
+        </section>
+      </article>
+
+      <article class="changge">
+        <h3>ChangGe</h3>
+        <p>In the sixth year of Wude (AD 623), Changgemen was founded on the shore of Qiandao Lake. It consists of
+          Xiangzhi Villa and Weishan Academy. Most of the gates are elegant people who love poetry and poetry. It
+          coincides with the turmoil turning to stability. At that time, the Chinese scholars of the family yearned for
+          the freedom and freedom of the knights of the rivers and lakes, gradually began to practice martial arts, and
+          achieved both civil and military skills. Over time, they developed into a well-known martial arts family.</p>
+        <p>Changgemen introduced the writings of ancient sages and sages on the way of heaven, earth and nature into
+          Changgemen martial arts, forming the core characteristics of martial arts such as "Qi and music, piano sound
+          and sword". And he has mastered the skill of using internal force to stimulate the sound of the piano, which
+          can confuse the mind if it is light, and hurt people invisible if it is serious. Few people in the martial
+          arts can surpass Chang Gemen in the practice of the relationship between internal force and rhythm.</p>
+        <section class="horver">
+          <img src="./image/changge.png" alt="ChangGe">
+          <p class="detail">Chang Ge</p>
+        </section>
+      </article>
+
+      <article class="badao">
+        <h3>BaDao</h3>
+        <p>Badao Villa is located in the north of the Yellow River, backed by Taihang Mountain, covering a very large
+          area. The villa's architecture has Wei and Jin styles, and it is integrated with the mountains and rocks. The
+          Liu family has been thriving for more than three hundred years, and was regarded as one of the few big
+          families in the Southern and Northern Dynasties since the Northern Wei Dynasty and the Sui and Tang Dynasties.
+          In the ups and downs of the rivers and lakes, the Liu family and all the Caos in the imperial court have made
+          achievements. They have made friends with the Dugu family, the Li family in Longxi, and the Changsun family;
+          Lu Shi became an old enemy.</p>
+        <p>Ba Dao martial arts originates from the long history and background of the school, and the design ideas and
+          the spirit of the school are mutually unified. Xiuming Dust Body, Pine Mist and Bamboo Mist, and Snow Flock
+          Golden Screen allow Ba Dao disciples to find the possibility to attack in any situation. The weapon setting of
+          two swords and one scabbard, combined with the brand-new overdraft martial arts mechanism, allows Ba Dao to
+          face difficulties even in difficult situations and launch continuous offensives.</p>
+        <section class="horver">
+          <img src="./image/badao.png" alt="BaDao">
+          <p class="detail">Ba Dao</p>
+        </section>
+      </article>
+
+      <article class="penglai">
+        <h3>PengLai</h3>
+        <p>In the Qin Dynasty, in order to avoid the entrustment of the first emperor to search for immortals and ask
+          for medicine, Guiguzi led his disciples to travel eastward, and came across the legendary Penglai fairy
+          island, so he lived in seclusion here. Fang Zheng, the ancestor of the Fang family in Penglai, was a disciple
+          of Guiguzi. After Guiguzi wandered around, Fang Zheng took charge of the island affairs. Isolated from the
+          world above the East China Sea, the islanders inherited the ideas of a hundred schools of thought inherited
+          from the pre-Qin period, and gradually formed four schools of law, ink, Taoism, and medicine.</p>
+        <p>Penglai martial arts "Ling Haijue" is derived from Fang Gan's Wuhe swordsmanship based on Guigu's school, and
+          the fusion of Cang Tianjun's lineage of martial arts and Tianzhu Jialan monk's parachute technique. Elegant
+          Umbrella Dance combined with smart palms, and Penglai's ancestral carving skills to protect and assist
+          himself, formed an original and legendary martial arts.</p>
+        <section class="horver">
+          <img src="./image/penglai.png" alt="PengLai">
+          <p class="detail">Peng Lai</p>
+        </section>
+      </article>
+
+      <article class="lingxue">
+        <h3>LingXue</h3>
+        <p>In the second year of the Holy Calendar of the Wu Zhou Dynasty, Li Longji, who had been confined in the
+          palace for seven years, regained his freedom. In the name of enjoying the snow, he secretly built Lingxue
+          Pavilion in Taibai Mountain. Since then, Lingxue Pavilion has been like a sharp blade in the dark night,
+          allowing Li Longji to save himself from danger many times in political struggles and remain invincible. The
+          Lingxue Pavilion is managed by the emperor, and there are two pavilions under it, the inner and outer
+          pavilions. The current owner of the outer pavilion is Li Chu, the eldest son of the emperor. Lingxue Pavilion
+          is a sharp weapon for the emperor to achieve political goals, and is the law enforcer of the dynasty in the
+          dark.</p>
+        <p>Lingxue wields a long whip weapon and is the royal assassin in martial arts novels, mysterious iron blood.
+        </p>
+        <section class="horver">
+          <img src="./image/lingxue.png" alt="LingXue">
+          <p class="detail">Ling Xue</p>
+        </section>
+      </article>
+
+      <article class="yantian">
+        <h3>YanTian</h3>
+        <p>Yan Tianzong was inherited from the lineage of the Yin-Yang family in the Warring States Period. During the
+          Zhenguan period of the Tang Dynasty, due to the secret prophecy of "Nv Wu Dai Tang", the suzerain Yuan
+          Tiangang took his sect disciples away from the desert. Yan Tianzong respects the way of heaven, firmly
+          believes that the operation of the way of heaven cannot be changed by human affairs, and rarely intervenes in
+          the affairs of the world. But following the way of heaven does not mean doing nothing, because entering the
+          world may also be part of the "way of heaven". If the destiny comes, Yan Tianzong will step into the
+          catastrophe of the mortal world without hesitation.</p>
+        <p>Yan Tianzong's martial art is the Taixuan Jing, and the main output method is long-range attack on the target
+          with spells. Using the soul lamp as a tool to lay out the "Qimen" martial arts, through the flexible use of
+          layouts, it highlights the strategic combat characteristics of Yantian martial arts, constantly changing the
+          layout form, and cannibalizing the enemy step by step.</p>
+        <section class="horver">
+          <img src="./image/yantian.png" alt="YanTian">
+          <p class="detail">Yan Tian</p>
+        </section>
+      </article>
+
+      <article class="yaozong">
+        <h3>YaoZong</h3>
+        <p>Shennong, the descendant of Beitian Medicine School, established the sect since the end of Qin Dynasty. After
+          hundreds of years of development, it has developed from medicine to medicine, and famous doctors have been
+          born. The teachings of the medicine sect are "essence" for individuals, "passage" for sects, and "rule" for
+          the world. For medical skills and even subtle matters, those who practice medicine must be diligent and
+          tireless. There are many medicines and medicines, and the magic prescriptions and medicines are not achieved
+          in a day. In addition to the ambition of dripping stones, it is also necessary to preserve the records and
+          pass them on to future generations. The root of medicine is cure, the doctor treats his studies, the patient
+          cures the disease, and the not sick cures it.</p>
+        <p>The medicine sect is characterized by systematic medical education and herbal medicine research. After
+          joining the medicine sect, knights will experience and reproduce the process of the sect.</p>
+        <section class="horver">
+          <img src="./image/yaozong.png" alt="YaoZong">
+          <p class="detail">Yao Zong</p>
+        </section>
+      </article>
+
+      <article class="daozong">
+        <h3>DaoZong</h3>
+        <p>Daozong was founded in the 28th year of Tang Kaiyuan by Xie Yunliu, the founder. Xie Yunliu was originally
+          the first disciple of Lu Dongbin, the founder of Chunyang Palace, but was forced to leave the Central Plains
+          and flee to Japan because of his involvement in the imperial power struggle. During his sojourn in a foreign
+          country, Xie Yunliu abandoned his sword and picked up a knife, and practiced a set of "one strike kills"
+          actual combat sword skills, forming a school of his own. The Fujiwara family invited him to be the master of
+          martial arts. More than 20 years later, Xie Yunliu returned to the Central Plains, and won the sword "Can Xue"
+          in the fourth famous sword competition, which became famous in the Central Plains martial arts. But one year
+          later, Xie Yunliu found out that Fujiwara Hirosu ordered Isto-ryu to do evil in the Central Plains under his
+          own name, and Xie Yunliu broke with Isto-ryu completely. Afterwards, Xie Yunliu established his own sect in
+          the area of ​​Wengzhou - Daozong.</p>
+        <p>The sword sect's weapon is Tang Hengdao. Daozong martial arts pays attention to practicality, and pursues
+          "one move must hit, one blow must kill". The disciples of the Dao Sect respect martial arts and morality, go
+          straight to the point, and spend their whole lives exploring the limits of martial arts.</p>
+        <section class="horver">
+          <img src="./image/daozong.png" alt="DaoZong">
+          <p class="detail">Dao Zong</p>
+        </section>
+      </article>
+    </section>
+
+    <section class="PVP">
+      <h2>PVP System</h2>
+      <ul>
+        <li>Arena (JJC): Arenas can generally be queued in major cities, divided into 2V2; 3V3; 5V5, each mode is an
+          independent rank, but the reward for promotion can only be claimed once.</li>
+        <li>Battlefield (ZC): The battlefield can generally be lined up in major cities, divided into 9 different maps,
+          each map has different winning conditions, and each map will be divided into two camps.</li>
+        <li>Attack and Defense (GF): Divided into big offense and defense and small offense and defense. The big attack
+          and defense is divided into two camps on a specific map given by the system for a 400vs400 big fight. Small
+          offense and defense is to conduct a 200vs200 battle on the existing map, and the winner can obtain the
+          ownership of this map.</li>
+        <li>Eat Chicken (CJ): It is a simulated game mode of PlayerUnknown's Battlegrounds.</li>
+        <li>Faction Daily (ZY): A daily PVP activity, you need to complete a series of tasks to get a kind of points,
+          through which you can buy PVP equipment.</li>
+      </ul>
+      <section class="horver">
+        <img src="./image/gongfang.png" alt="GongFang">
+        <p class="detail">PVP Fighting</p>
+      </section>
+    </section>
+
+    <section class="PVE">
+      <h2>PVE System</h2>
+      <p>Like most mmorpgs, JX3's PVE is divided into 5 player bases (war base), 10 player bases (Wulin Tongjian), and
+        25 player bases (hero, normal, and red dust bases), among which 25 player bases of mainstream heroes can be
+        obtained The current version graduated gear.</p>
+      <ul>
+        <li>10-player dungeon: Mainly for big and small enchantments and small irons, and it is also a good place to
+          farm chivalry.</li>
+        <li>Chivalry: There will be 2~3 weekly 10-player dungeons and 3 5-player dungeons every week to get a lot of
+          chivalry, which can be exchanged for PVE equipment graduated from the current season.</li>
+        <li>old dungeon: Mainly by fighting some old bosses to get some special drops (horses, harnesses, pendants,
+          mysterious crystals, pets, etc.).</li>
+        <li>Strange Records of Hundred Wars: This is the latest pve gameplay, once launched, it immediately became
+          popular in the entire game. In this mode, many previous old bosses have been modified and integrated into a
+          dungeon. In this dungeon, players can only use the skills given by the system, which adds a lot of challenges.
+        </li>
+      </ul>
+      <section class="horver">
+        <img src="./image/fuben.jpg" alt="FuBen">
+        <p class="detail">Drops after clearing a boss</p>
+      </section>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Cleon Huang (and Google translate) about Jian Wang 3 </p>
+    <a href="https://www.jx3box.com/index/" alt="Jian Wang 3">Source: https://www.jx3box.com/index/</a>
+  </footer>
+</body>
+
+</html>
