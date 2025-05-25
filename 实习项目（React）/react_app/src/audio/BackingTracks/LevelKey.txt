@@ -1,0 +1,5 @@
+Level 1 - Background (-5db)
+Level 2 - Background + Dog x3 (-3db)
+Level 3 - Background + Dog x2 + Horn x2
+Level 4 - Background (volume up) + Dog x4 + Horn x1
+Level 5 - Background (volume Up) + horn x2 + siren (double length)

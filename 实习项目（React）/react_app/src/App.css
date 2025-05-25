@@ -1,0 +1,388 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #e6cda0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(45, 37, 37);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Red {
+  left: 35%;
+  top: 77%;
+  z-index: 1;
+  background-color: red;
+}
+
+.Red:hover,
+.Red:focus {
+  background-color: rgb(249, 94, 94);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+
+.Orange {
+  left: 20%;
+  top: 77%;
+  z-index: 1;
+  background-color: #fa6400;
+}
+
+.Orange:hover,
+.Orange:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.Purple {
+  left: 30%;
+  top: 88%;
+  z-index: 1;
+  background-color: purple;
+}
+
+.Purple:hover,
+.Purple:focus {
+  background-color: rgb(188, 89, 188);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.Yellow {
+  left: 55%;
+  top: 88%;
+  z-index: 1;
+  background-color: rgb(120, 116, 34);
+}
+
+.Yellow:hover,
+.Yellow:focus {
+  background-color: rgb(224, 216, 57);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.Green {
+  left: 80%;
+  top: 75%;
+  z-index: 1;
+  background-color: rgb(89, 148, 66);
+}
+
+.Green:hover,
+.Green:focus {
+  background-color: rgb(79, 247, 95);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.Repeat {
+
+  z-index: 1;
+  right: 43.3%;
+  bottom: 29%;
+
+  width: 6%;
+  height: 4%;
+
+  position: absolute;
+  background-color: rgb(57, 49, 73);
+}
+
+.Repeat:hover,
+.Repeat:focus {
+  background-color: rgb(104, 104, 104);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.Produce-Buttons {
+  align-items: center;
+  background-clip: padding-box;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: absolute;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+}
+
+.Produce-Buttons:hover {
+  transform: translateY(-1px);
+}
+
+.BackgroundHolder {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.Start-Button {
+  background-color: Transparent;
+  position: absolute;
+  right: 19%;
+  bottom: 5%;
+  width: 18%;
+  height: 18%;
+  z-index: 1;
+  font-size: 5vw;
+  font-family: "Times New Roman", Times, serif;
+  color: #062545;
+}
+
+.Start-Link {
+  background-color: Transparent;
+  position: absolute;
+  z-index: 1;
+  font-size: 1vw;
+  font-family: "Times New Roman", Times, serif;
+  color: #062545;
+  text-decoration: none; 
+}
+
+.Credit {
+  right: 2%;
+  top: 1%;
+}
+
+.Sponsor {
+  right: 10%;
+  top: 1%;
+}
+
+.Start-Button:hover,
+.Start-Button:focus {
+  background-color: rgba(255, 255, 255, 0.11);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.Background {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.Customer {
+  right: 35%;
+  bottom: 26.75%;
+
+  width: 25%;
+  height: 40%;
+
+  position: absolute;
+}
+
+.Score {
+  position: absolute;
+  left: 46%;
+  top: 10%;
+  z-index: 1;
+}
+
+.Countdown {
+  position: absolute;
+  left: 56%;
+  top: 10%;
+  z-index: 1;
+}
+
+.Clock {
+  z-index: 1;
+  position: absolute;
+  max-width: 20%;
+  max-height: 20%;
+  left: 10%;
+  top: 12%;
+}
+
+.ClockHand {
+  z-index: 2;
+  position: absolute;
+  max-width: 17%;
+  max-height: 17%;
+  left: 10%;
+  top: 15%;
+  object-fit: fill;
+  transform-origin: center center;
+  transform: rotate(0deg);
+}
+
+.loading-spinner {
+  animation: rotate 60s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Debug {
+  position: absolute;
+  left: 21%;
+  top: 50%;
+  z-index: 1;
+}
+
+
+
+.Popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  transform-origin: center center;
+  background-color: #afd6ff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #151232;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  transition: transform 0.3s ease;
+}
+
+.Popup h2 {
+  margin-top: 0;
+}
+
+.Popup button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #192456;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Popup button:hover {
+  background-color: #0056b3;
+}
+
+.Order-Container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #afd6ff;
+  padding: 20px;
+  border: 3px solid #151232;
+  width: 200px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  color: #333;
+}
+
+.Order-List {
+  list-style: none;
+  padding: 0;
+  background-color: #e6cda0;
+  border: 3px solid #151232;
+  min-height: 250px;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+.Order-List p {
+  margin-top: 0;
+  margin-bottom: 0%;
+}
+
+.Order-List li {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.Order-List img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.Confirm-Button {
+  width: 100%;
+  padding: 10px;
+  background-color: #192456;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.Confirm-Button:hover {
+  background-color: #354179;
+}
+
+.Fruit-Row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.Fruit-Icon {
+  width: 50px;
+  height: 50px;
+  margin-left: -25px;
+}
+
+.Fruit-Row .Fruit-Icon:first-child {
+  margin-left: 0;
+}
+
+.svg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
