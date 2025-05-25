@@ -1,0 +1,18 @@
+- base items
+tomato, red and round, 0.5
+wand, a magic wand!, 0.35
+rock, rock :D, 0.4
+
+- craftable items
+magical mace, a wand with a rock on one end, wand, rock
+
+- store
+The stash
+tomato, 2
+wand, 2
+
+- player
+2.0
+magical mace, 1
+rock, 2
+wand, 1
