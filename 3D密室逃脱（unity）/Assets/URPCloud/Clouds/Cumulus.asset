@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8041bcc523e161349acf4418a4784fcc, type: 3}
+  m_Name: Cumulus
+  m_EditorClassIdentifier: 
+  CloudColor: {r: 1, g: 1, b: 1, a: 1}
+  Wind: {x: 2, y: 0.5, z: 0}
+  Steps: 18
+  LightSteps: 15
+  CloudScale: 1.3
+  CloudSmooth: 4
+  LightAbsorptionThroughCloud: 0.2
+  ContainerEdgeFadeDst: 50
+  DensityThreshold: 0.35
+  DensityMultiplier: 0.5
+  LightAbsorptionTowardSun: 0.18
+  DarknessThreshold: 0.08
+  alpha: 0.95
+  DetailCloudWind: {x: 0.8, y: 0, z: 0}
+  detailCloudWeight: 0.18
+  DetailCloudScale: 1.1

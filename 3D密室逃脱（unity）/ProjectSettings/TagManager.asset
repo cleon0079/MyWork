@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - NumLock
+  - SlideLock
+  - Lock
+  - Door
+  - Crate
+  - End
+  - Jigsaw
+  - ID_Card
+  - Clue
+  - PhotoFrame
+  - BlackBoard
+  - Chair
+  - Table
+  - PickableItem
+  - Book
+  - Container
+  - Block
+  - BrokenDegree
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Item
+  - Water
+  - UI
+  - Player
+  - PostProcessEffect
+  - Lock
+  - Interact
+  - Camera
+  - DragItem
+  - Book
+  - Prize
+  - PaperPuzzlePiece
+  - Degree Layer
+  - LevelThree
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

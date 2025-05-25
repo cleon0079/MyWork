@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8041bcc523e161349acf4418a4784fcc, type: 3}
+  m_Name: Altocumulus
+  m_EditorClassIdentifier: 
+  CloudColor: {r: 1, g: 1, b: 0.9, a: 0.9490196}
+  Wind: {x: 0.3, y: 0.3, z: 0.3}
+  Steps: 33
+  LightSteps: 21
+  CloudScale: 1.91
+  CloudSmooth: 24.5
+  LightAbsorptionThroughCloud: 0.344
+  ContainerEdgeFadeDst: 60.7
+  DensityThreshold: 0.173
+  DensityMultiplier: 2.635
+  LightAbsorptionTowardSun: 0.1
+  DarknessThreshold: 0.1643
+  alpha: 0.7
+  DetailCloudWind: {x: -0.3, y: -0.3, z: -0.3}
+  detailCloudWeight: 0.423
+  DetailCloudScale: 1.659

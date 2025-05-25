@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8041bcc523e161349acf4418a4784fcc, type: 3}
+  m_Name: Nimbostratus
+  m_EditorClassIdentifier: 
+  CloudColor: {r: 0.5566038, g: 0.5566038, b: 0.5566038, a: 1}
+  Wind: {x: 0.5, y: 0.02, z: 0.06}
+  Steps: 50
+  LightSteps: 30
+  CloudScale: 1.4
+  CloudSmooth: 50
+  LightAbsorptionThroughCloud: 0.347
+  ContainerEdgeFadeDst: 100
+  DensityThreshold: 0.364
+  DensityMultiplier: 1.72
+  LightAbsorptionTowardSun: 0.118
+  DarknessThreshold: 0.25
+  alpha: 0.7
+  DetailCloudWind: {x: 0.06, y: 0, z: 0}
+  detailCloudWeight: 0.198
+  DetailCloudScale: 1.84
