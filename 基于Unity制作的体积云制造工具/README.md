@@ -1,3 +1,12 @@
+# 基于 Unity 的体积云制造工具
+
+这是一个为 Unity 自定义渲染管线制作的插件，用于体积云渲染实验。
+
+## 技术点
+- ShaderLab 与 HLSL 编程
+- ScriptableRenderFeature 管线拓展
+- 云密度、颜色、体积的可调节参数
+
 # COMP3180 Final Project
 
 Included is a rough timeline below. Fill this in from week to week to show your progress throughout semester.
