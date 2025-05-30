@@ -6,3 +6,5 @@
 - Java Swing 界面组件
 - 商品列表显示与选择
 - 简单的交互逻辑处理
+
+![image](https://github.com/user-attachments/assets/83a2cd3a-6cbe-4b91-815f-e27e869d06d9)
