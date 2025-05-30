@@ -7,6 +7,9 @@
 - ScriptableRenderFeature 管线拓展
 - 云密度、颜色、体积的可调节参数
 
+![image](https://github.com/user-attachments/assets/1632876e-7ca4-483f-9e30-049068c64198)
+
+
 # COMP3180 Final Project
 
 Included is a rough timeline below. Fill this in from week to week to show your progress throughout semester.
