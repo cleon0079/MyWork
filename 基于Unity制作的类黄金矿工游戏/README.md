@@ -1,13 +1,10 @@
-Name: Cleon Huang
-ID: 46441271
+# 基于 Unity 的黄金矿工游戏
 
-# COMP2160-GDT1
+这是对经典“黄金矿工”游戏的重制，保留经典玩法并进行了一定扩展。
 
-This is the repository for you COMP2160 GDT1 assignment. Complete your project using the template provided, and don't forget to include your documentation.
+## 技术点
+- Unity 物理系统
+- 金块生成与勾取逻辑
+- 分数系统与 UI 控制
 
-Contact cameron.edmond@mq.edu.au if you encounter any problems. Happy coding!
-
-## Credits
-Utility Scripts by Malcolm Ryan
-Sprites by Cameron Edmond
-Digital Disco Font by jeti: https://www.dafont.com/digital-disco.font
+![image](https://github.com/user-attachments/assets/1a610e36-2356-48d9-9076-19d1af274c6b)
